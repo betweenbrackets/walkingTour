@@ -2,79 +2,412 @@
 <html lang="en">
 
 <head>
-	<!--Required meta tags always come first-->
-	<meta charset="uft-8">
-	<meta name="viewpoint" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-eqiv="x-ua-compatible" content="ie=edge">
-	
-	<!--Bootstrap CSS-->
-	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-	
-	<!--external CSS stylesheet-->
-	<link href="css/styles.css" rel="stylesheet">
-	
-    <title>Ristorante Con Fusion</title>
+    <!--Required meta tags always come first-->
+    <meta charset="uft-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-eqiv="x-ua-compatible" content="ie=edge">
+
+<!-- COPIED FROM WE3 BOOTSTRAP 4 CAROUSEL -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+
+    <!--external CSS stylesheet-->
+    <link href="css/styles.css" rel="stylesheet">
+
+<!-- COPIED FROM WE3 BOOTSTRAP 4 CAROUSEL -->
+    <style>
+    /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <title>Walking Tour - Hotel on the Corner of Bitter and Sweet</title>
 </head>
 
 <body>
-
-    <header class="jumbotron">
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
-            <div class="row row-header">
-                <div class="col-12 col-sm-6">
-                    <h1>Ristorante con Fusion</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"><span
+                    class="navbar-toggler-icon"></span></button>
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41"></a>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span>
+                            Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-lg"></span>
+                            About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html"><span
+                                class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                </ul>
+                <!--adding modal to nav-->
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span> Login</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+<!-- JUMBOTRON -->
+    <header class="jumbotron">
+            <div class="container">
+                <div class="row row-header">
+                    <div class="col-12 col-sm-6">
+                        <h1>Walking Tour</h1>
+                        <p>Icing gummies macaroon apple pie jujubes chocolate cake. Sugar plum cake gummi bears cake. Liquorice chupa chups gummi bears fruitcake candy canes. Dessert brownie oat cake.
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm align-self-center">
+                        <img src="img/logo.png" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-sm align-self-center">
+                        <button type="button" class="bg-warning btn-block" >
+                            <a role="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-block nav-link btn-warning"
+                                data-html="true"
+                                data-placement="bottom" href="#reservationModal">Walking Tour
+                            </a>
+                        </button>
+                    </div>
                 </div>
-                <div class="col-12 col-sm">
+            </div>
+        </header>
+
+<!-- LOGIN MODAL BEGIN -->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Walking Tour </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="container">
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                <h3>Our Lipsmacking Culinary Creations</h3>
-            </div>
-            <div class="col col-sm order-sm-first col-md">
-                <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-            </div>
-        </div>
-
-
-        <div class="row row-content align-items-center">
-            <!--no  order-sm-last; now there is-->
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                <h3>This Month's Promotions</h3>
-            </div>
-            <!--no  order-sm-first; now there is-->
-            <div class="col col-sm order-sm-last col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
-            </div>
-        </div>
-
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                <h3>Meet our Culinary Specialists</h3>
-            </div>
-            <div class="col col-sm order-sm-first col-md">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                    placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1"
+                                    id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
+<!-- END OF LOGIN MODAL-->
 
+<!-- RESERVATION MODAL BEGIN -->
+    <div id="exampleModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Walking Tour </h4>
+                    <!-- close button with an x-->
+                    <button type="button" class="close" data-dismiss="modal">&times</button>
+                </div>
+                <div class="modal-body">
+                    <!-- reservation form-->
+                    <form>
+                        <!-- number of guests row-->
+                        <div class="form-group row">
+                            <div class="col-md-2">
+                                <label>Number of Guests
+                                </label>
+                            </div>
+                            <div class="col-md-10">
+                                <input type="radio" value="1"> 1 &nbsp;
+                                <input type="radio" value="2"> 2 &nbsp;
+                                <input type="radio" value="3"> 3 &nbsp;
+                                <input type="radio" value="4"> 4 &nbsp;
+                                <input type="radio" value="5"> 5 &nbsp;
+                                <input type="radio" value="6"> 6 &nbsp;
+                            </div>
+                        </div>
+                        <!-- Smoking and Nonsmoking buttons-->
+                        <div class="form-group row">
+                            <div class="col-md-2">
+                                <label>Section
+                                </label>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-secondary bg-success text-white active">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                                    </label>
+                                    <label class="btn btn-secondary bg-danger text-white">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- date time row-->
+                        <div class="form-group row">
+                            <div class="col-md-2"><label>Date and Time:</label>
+                            </div>
+                            <!-- date textbox-->
+                            <div class="col-md-5">
+                                <div class="input-group">
+                                    <input type="text" name="date" placeholder="Date" class="form-control">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="basic-addon2"><i
+                                                class="fa fa-calendar"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- time textbox-->
+                            <div class="col-md-5">
+                                <div class="input-group">
+                                    <input type="text" name="time" placeholder="Time" class="form-control">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="basic-addon2"><i class="fa fa-clock-o"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- cancel and reserve buttons-->
+                        <div class="form-group row">
+                            <div class="col-md-10 offset-md-2">
+                                    <button type="button" class="btn-sm bg-secondary text-white">Cancel</button>
+                                    <button type="button" class=" btn-sm bg-primary text-white">Reserve</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- RESERVATION  MODAL END -->
+
+    <div class="container">
+        <!-- CAROUSEL BEGIN  -->
+        <div class="row row-content">
+            <div class="col">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="img/uthappizza.png" alt="Uthappizza">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Walking Tour <span class="badge badge-danger">HOT</span> <span
+                                        class="badge badge-pill badge-default">$4.99</span>
+                                </h2>
+                                <p class="d-none d-sm-block">Cupcake ice cream pudding chocolate. Sesame snaps macaroon croissant chocolate cake biscuit biscuit. Jelly-o biscuit topping sweet oat cake gingerbread. Gummi bears brownie wafer donut cake carrot cake.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="img/buffet.png" alt="buffet">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="mt=0">Walking Tour <span class="badge badge-danger"> NEW </span>
+                                </h2>
+                                <p class="d-none d-sm-block">Jujubes sweet roll cupcake candy. Croissant lollipop fruitcake fruitcake cookie bear claw. Chocolate macaroon jelly beans.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="img/alberto.png" alt="alberto">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="mt=0">Walking Tour </h2>
+                                <h4>Walking Tour </h4>
+                                <p class="d-none d-sm-block">Jujubes pastry carrot cake tart pudding marzipan. Ice cream cake caramels. Tootsie roll tart topping sweet roll biscuit brownie icing marshmallow. Caramels sesame snaps sweet roll chocolate.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--ol and a inside the <div id="mycarousel" class="carousel slide" data-ride="carousel">-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                    </ol>
+                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+<!-- CAROUSEL END -->
+
+////////
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <!-- bars on slide indicating # of slides -->
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+        <li data-target="#demo" data-slide-to="4"></li>
+        <li data-target="#demo" data-slide-to="5"></li>
+        <li data-target="#demo" data-slide-to="6"></li>
+        <li data-target="#demo" data-slide-to="7"></li>
+        <li data-target="#demo" data-slide-to="8"></li>
+        <li data-target="#demo" data-slide-to="9"></li>
+        <li data-target="#demo" data-slide-to="10"></li>
+        <li data-target="#demo" data-slide-to="11"></li>
+        <li data-target="#demo" data-slide-to="12"></li>
+    </ul>
+    
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/2panamaHotel.png" alt="Panama Hotel">
+            <div class="carousel-caption">
+                <h3>Panama Hotel</h3>
+                <p>“The more Henry though about the shabby old knickknacks, the forgotten treasures, the more he wondered if his own broken heart might be found in there, hidden among the unclaimed possessions of another time. Boarded up in the basement of a condemned hotel. Lost, but never forgotten.” </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/1wingLukeMuseum.jpg" alt="Wing Luck Museum" width="1100" height="500">
+            <div class="carousel-caption">
+                <h3>Wing Luke Museum</h3>
+                <p></p>
+                <!-- TODO link to tours page on website -->
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/3cantonAlley.jpg" alt="Canton Alley" width="1100" height="500">
+            <div class="carousel-caption"><h3>Canton Alley</h3></div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/4southJackson.jpg" alt="South Jackson" width="1100" height="500">
+            <div class="carousel-caption"><h3>South Jackson</h3></div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/5nipponKanTheater.jpg" alt="Nipoon Kan Theater" width="1100" height="500">
+            <div class="carousel-caption"><h3>Nippon Kan Theater</h3></div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/6chinaGateRestaurant.jpg" alt="China Gate Restaurant" width="1100" height="500">
+            <div class="carousel-caption"><h3>China Gate Restaurant</h3></div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/7chongWaBenAss.jpg" alt="Chong Wa Benevolent Association" width="1100" height="500">
+            <div class="carousel-caption"><h3>Chong Wa Benevolent Association</h3></div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/8bingKungCOPYRIGHT.jpg" alt="Bing Kung Association" width="1100" height="500">
+            <div class="carousel-caption"><h3>Bing Kung Association</h3></div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/10higoVarietyStore.jpg" alt="Higo Variety Store" width="1100" height="500">
+            <div class="carousel-caption"><h3>Higo Variety Store</h3></div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/11uwajimaya.jpg" alt="Uwajimaya" width="1100" height="500">
+            <div class="carousel-caption"><h3>Uwajimaya</h3></div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/12unionStation.jpg" alt="Union Station" width="1100" height="500">
+            <div class="carousel-caption"><h3>Union Station</h3></div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/13budsJazzRecords1.jpg" alt="Bud's Jazz Records" width="1100" height="500">
+            <div class="carousel-caption"><h3>Bud's Jazz Records</h3></div>
+        </div>
+    </div>
+    
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+////////
+
+<!-- THE THREE CONTENT ROWS -->
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 col-md-3 order-sm-last">
+                <h3>Walking Tour </h3>
+            </div>
+            <div class="col col-sm col-md order-sm-first">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="uthappizza">
+                    <div class="media-body">
+                        <h2 class="mt-0">Walking Tour <span class="badge badge-danger"> HOT </span>
+                            <span class="badge badge-pill badge-secondary"> $4.99 </span></h2>
+                        <p class="d-none d-sm-block">Toffee ice cream dessert chocolate cake halvah toffee candy oat cake candy canes. Candy oat cake toffee bear claw jelly beans candy canes. Dragée jelly-o biscuit danish.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 col-md-3">
+                <h3>Walking Tour </h3>
+            </div>
+            <div class="col col-sm col-md">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
+                    <div class="media-body">
+                        <h2 class="mt=0">Walking Tour <span class="badge badge-danger"> NEW </span></h2>
+                        <p class="d-none d-sm-block">Toffee ice cream dessert chocolate cake halvah toffee candy oat cake candy canes. Candy oat cake toffee bear claw jelly beans candy canes. Dragée jelly-o biscuit danish.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 col-md-3 order-sm-last">
+                <h3>Walking Tour</h3>
+            </div>
+            <div class="col col-sm col-md order-sm-first">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png" alt="alberto">
+                    <div class="media-body">
+                        <h2 class="mt=0">Walking Tour</h2>
+                        <h4>Walking Tour</h4>
+                        <p class="d-none d-sm-block">Toffee ice cream dessert chocolate cake halvah toffee candy oat cake candy canes. Candy oat cake toffee bear claw jelly beans candy canes. Dragée jelly-o biscuit danish.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- FOOTER -->
     <footer class="footer">
         <div class="container">
-            <div class="row">             
-                <div class="col-4 offset-1 col-sm-2">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
@@ -82,39 +415,47 @@
                 <div class="col-7 col-sm-5">
                     <h5>Our Address</h5>
                     <address>
-		              121, Clear Water Bay Road<br>
-		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
-		              Tel.: +852 1234 5678<br>
-		              Fax: +852 8765 4321<br>
-		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
-		           </address>
+                        121, Clear Water Bay Road<br>
+                        Clear Water Bay, Kowloon<br>
+                        HONG KONG<br>
+                        <i class="fa fa-phone fa-lg"></i> +852 1234 5678<br>
+                        <i class="fa fa-fax fa-lg"></i> +852 8765 4321<br>
+                        <i class="fa fa-envelope fa-lg"></i> Email: <a
+                            href="mailto:confusion@food.net">confusion@food.net</a>
+                    </address>
                 </div>
                 <div class="col-12 col-sm-4 align-self-center">
-					<!-- no col-auto-->
                     <div class="text-center">
-                        <a href="http://google.com/+">Google+</a>
-                        <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-                        <a href="http://www.linkedin.com/in/">LinkedIn</a>
-                        <a href="http://twitter.com/">Twitter</a>
-                        <a href="http://youtube.com/">YouTube</a>
-                        <a href="mailto:">Mail</a>
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
+                                class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
+                                class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+                                class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                                class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i
+                                class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
                     </div>
                 </div>
-           </div>
-           <div class="row justify-content-center">             
+            </div>
+            <div class="row justify-content-center">
                 <div class="col-auto">
                     <p>© Copyright 2018 Ristorante Con Fusion</p>
                 </div>
-           </div>
+            </div>
         </div>
     </footer>
-	
-	<!--jQuery first, then Popper.js, then Boostrap JS-->
-	<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <!--jQuery first, then Popper.js, then Boostrap JS-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- COPIED FROM WE3 BOOTSTRAP 4 CAROUSEL-->
+    <script>
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    </script>
 </body>
-
 </html>
