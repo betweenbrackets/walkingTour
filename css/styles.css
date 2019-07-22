@@ -12,7 +12,7 @@
 }
 
 .footer {
-    background-color: #D1C4E9;
+    background-color: #feeb80;
     margin: 0px auto;
     padding: 20px 0px 20px 0px;
 }
@@ -20,8 +20,8 @@
 .jumbotron {
     padding: 70px 30px 70px 30px;
     margin: 0px auto;
-    background: #9575CD;
-    color: floralwhite;
+    background: #feeb80;
+    color: #44533A;
 }
 
 .address {
@@ -29,3 +29,30 @@
     margin: 0px;
     color: #0f0f0f;
 }
+.carousel-caption {
+    font-family: 'Dosis', sans-serif;
+}
+/* COLOR PALETTE */
+/*
+paler green tea #d6e7cb;
+green tea #A6CA8C
+darker green tea #85A270
+darkest green tea #44533A
+
+paler yellow #feeb80
+yellow #FEE03F
+thicker yellow #FED705
+thickest yellow #FBD400
+
+lighter blue #b3f0ff 
+blue #66e0ff
+darker blue #33d6ff
+
+flat brown #996633
+flat brown lighter #c68c53
+flat brown lightest #dfbf9f 
+
+red brown #8b3527
+pale red brown  #dd9388
+paler red brown #eec9c3
+*/
