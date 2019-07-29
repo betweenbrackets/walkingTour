@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--  W3 School Basic Collapsible  -->
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Simple Collapsible</h2>
+            <p>Click on the button to toggle between showing and hiding content.</p>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+            <!--  data-target id matches div id  -->
+            <div id="demo" class="collapse">
+                Run a rig case shot gangway matey cutlass lanyard hang the jib lass Spanish Main gaff. Aft belaying pin belay measured fer yer chains scallywag gaff plunder sutler wench long boat. Mizzen scallywag square-rigged  main sheet dance the hempen jig swab cog Yellow Jack pink tackle. Careen furl hogshead hands topgallant blow the man down gun Corsair no prey, no pay pink. Prow mizzen bilge water fire ship weigh anchor cackle fruit Sink me wench pinnace black spot. Poop deck line hulk lass hang the jib capstan bowsprit yawl killick Arr.
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <div class="col-12">
+                <h2>Corporate Leadership</h2>
+                <div id="accordion">
+                    <!--  TODO match ids and build rest of places-->
+                    <!--Panama Hotel's accordion card-->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="panamaHotelHead">
+                            <h3 class="mb-0">
+                                <a data-toggle="collapse" data-target="#panamaHotel">Panama Hotel <small>The Basement </small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse show" id="panamaHotel" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Run a rig case shot gangway matey cutlass lanyard hang the jib lass Spanish Main gaff. Aft belaying pin belay measured fer yer chains scallywag gaff plunder sutler wench long boat. Mizzen scallywag square-rigged main sheet dance the hempen jig swab cog Yellow Jack pink tackle.
+                                Careen furl hogshead hands topgallant blow the man down gun Corsair no prey, no pay pink. Prow mizzen bilge water fire ship weigh anchor cackle fruit Sink me wench pinnace black spot. Poop deck line hulk lass hang the jib capstan bowsprit yawl killick Arr.
+                                </p>
+                            </div>      
+                        </div>
+                    </div>
+                    <!--Danny's accordion card-->
+                    <div class="card"> 
+                        <div class="card-header" role="tab" id="dannyhead">
+                            <h3 class="mb-0">
+                                <a class="collapsed"data-toggle="collapse" data-target="#danny">Dhanasekaran Witherspoon <small>Chief Food Officer </small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse" id="danny" data-parent="#accordion">
+                            <div class="card-body"> 
+                                <p class="d-none d-sm-block">Run a rig case shot gangway matey cutlass lanyard hang the jib lass Spanish Main gaff. Aft belaying pin belay measured fer yer chains scallywag gaff plunder sutler wench long boat. Mizzen scallywag square-rigged main sheet dance the hempen jig swab cog Yellow Jack pink tackle. Careen furl hogshead hands topgallant blow the man down gun Corsair no prey, no pay pink. Prow mizzen bilge water fire ship weigh anchor cackle fruit Sink me wench pinnace black spot. Poop deck line hulk lass hang the jib capstan bowsprit yawl killick Arr.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Agumbe's accordion card-->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="agumbehead">
+                            <h3 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" data-target="#agumbe">Agumbe Tang <small>Chief Taste Officer </small>
+                                </a>
+                            </h3>
+                        </div>
+                    <div class="collapse" id="agumbe" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="d-none d-sm-block">Run a rig case shot gangway matey cutlass lanyard hang the jib lass Spanish Main gaff. Aft belaying pin belay measured fer yer chains scallywag gaff plunder sutler wench long boat. Mizzen scallywag square-rigged main sheet dance the hempen jig swab cog Yellow Jack pink tackle.
+                            Careen furl hogshead hands topgallant blow the man down gun Corsair no prey, no pay pink. Prow mizzen bilge water fire ship weigh anchor cackle fruit Sink me wench pinnace black spot. Poop deck line hulk lass hang the jib capstan bowsprit yawl killick Arr.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                    <!--Alberto's accordion card-->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="albertohead">
+                            <h3 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" data-target="#alberto">Alberto Somayya <small>Executive Chef</small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse" id="alberto" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Run a rig case shot gangway matey cutlass lanyard hang the jib lass Spanish Main gaff. Aft belaying pin belay measured fer yer chains scallywag gaff plunder sutler wench long boat. Mizzen scallywag square-rigged main sheet dance the hempen jig swab cog Yellow Jack pink tackle.
+                                Careen furl hogshead hands topgallant blow the man down gun Corsair no prey, no pay pink. Prow mizzen bilge water fire ship weigh anchor cackle fruit Sink me wench pinnace black spot. Poop deck line hulk lass hang the jib capstan bowsprit yawl killick Arr.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

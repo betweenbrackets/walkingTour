@@ -24,24 +24,37 @@
     color: #44533A;
 }
 
+.container {
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feeb80+0,feffff+53,feffff+100;walkingTour */
+
+    background: rgb(254,235,128); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(254,235,128,1) 0%, rgba(254,255,255,1) 53%, rgba(254,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(254,235,128,1) 0%,rgba(254,255,255,1) 53%,rgba(254,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(254,235,128,1) 0%,rgba(254,255,255,1) 53%,rgba(254,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feeb80', endColorstr='#feffff',GradientType=0 ); /* IE6-9 */
+}
 .address {
     font-size: 80%;
     margin: 0px;
     color: #0f0f0f;
 }
+
+li>a {
+    color: #44533A; 
+}
+
 .carousel-caption, p, h1, h2, h4, h5 {
-    /*  Tweaking Font Choice font-family: 'Dosis', sans-serif;*/
+    /*  Tweaking Font Choice font-family: 'Dosis', sans-serif; */
     font-family: 'Poiret One', cursive;
+}
+
+.carousel-inner >.carousel-item>img { /* Amy */
+    height: 500px;
+    width: 100%;
 }
 
 h3 {font-family: 'Raleway', sans-serif;}
 
-/* COPIED FROM WE3 BOOTSTRAP 4 CAROUSEL */
-/* Make the image fully responsive */
-.carousel-inner img {
-    width: 100%;
-    height: 100%;
-}
 /* COLOR PALETTE */
 /*
 paler green tea #d6e7cb;
@@ -53,6 +66,20 @@ paler yellow #feeb80
 yellow #FEE03F
 thicker yellow #FED705
 thickest yellow #FBD400
+
+COLOR PICKER FROM PHOTO
+palest yellow #FEFFFF
+darkest yellow #FEDF85
+stamp red #FDC887
+palest building #ECDBD3
+medium building #CDA07D
+darkest building #342215
+sign white #DEDCE5
+palest sign blue #8CD5F3
+darkest sign blue #1CBACD
+lightest green #AEC0BF
+medium green #86ADAA
+darkest green #547371
 
 lighter blue #b3f0ff 
 blue #66e0ff
