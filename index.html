@@ -17,7 +17,8 @@
 
     <!-- COPIED FROM GOOGLE FONTS -->
 
-    <!-- Tweaking Font Choice <link href="https://fonts.googleapis.com/css?family=Dosis:400,500&display=swap" rel="stylesheet">-->
+    <!-- Tweaking Font Choice -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
 
@@ -199,64 +200,9 @@
         </div>
     </div>
     <!-- RESERVATION  MODAL END -->
-<!--
-    <div class="container">
-        <div class="row row-content">
-            <div class="col">
-                
-                <div id="mycarousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="img/uthappizza.png" alt="Uthappizza">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h2>Walking Tour <span class="badge badge-danger">HOT</span> <span
-                                        class="badge badge-pill badge-default">$4.99</span>
-                                </h2>
-                                <p class="d-none d-sm-block">Cupcake ice cream pudding chocolate. Sesame snaps macaroon croissant chocolate cake biscuit biscuit. Jelly-o biscuit topping sweet oat cake gingerbread. Gummi bears brownie wafer donut cake carrot cake.
-                                </p>
-                            </div>
-                        </div>
 
-                        <div class="carousel-item">
-                            <img class="d-block img-fluid" src="img/buffet.png" alt="buffet">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h2 class="mt=0">Walking Tour <span class="badge badge-danger"> NEW </span>
-                                </h2>
-                                <p class="d-none d-sm-block">Jujubes sweet roll cupcake candy. Croissant lollipop fruitcake fruitcake cookie bear claw. Chocolate macaroon jelly beans.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <img class="d-block img-fluid" src="img/alberto.png" alt="alberto">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h2 class="mt=0">Walking Tour </h2>
-                                <h4>Walking Tour </h4>
-                                <p class="d-none d-sm-block">Jujubes pastry carrot cake tart pudding marzipan. Ice cream cake caramels. Tootsie roll tart topping sweet roll biscuit brownie icing marshmallow. Caramels sesame snaps sweet roll chocolate.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <ol class="carousel-indicators">
-                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#mycarousel" data-slide-to="1"></li>
-                        <li data-target="#mycarousel" data-slide-to="2"></li>
-                    </ol>
-                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
-                </div>
-                
-            </div>
-        </div>
-    </div>
--->
 <!-- BEGIN OF CAROUSEL -->
-    <div class="container">
+    <div class="container d-none d-sm-block" id="walkingTourCarousel">
         <div id="demo" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <!-- bars on slide indicating # of slides -->
@@ -345,266 +291,576 @@
             <span class="carousel-control-next-icon"></span>
             </a>
       </div>
-    <!-- END OF CAROUSEL -->
-    </div>
+    <!-- END OF CAROUSEL --> 
 
-<!-- THE CONTENT ROWS -->
     <div class="row row-content align-items-center">
-        <div class="container">
-
-            <div class="col-12 col-sm-4 col-md-3 order-sm-last">
-                <h3>Panama Hotel </h3>
-            </div>
-            <div class="col col-sm col-md order-sm-first">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="uthappizza">
-                    <div class="media-body">
-                        <h2 class="mt-0">Panama Hotel <span class="badge badge-danger"> HOT </span>
-                            <span class="badge badge-pill badge-secondary"> $4.99 </span></h2>
-                        <p class="d-none d-sm-block">Gingerbread cake jujubes. Sweet roll I love cake oat cake dessert chocolate cake. Fruitcake soufflé cookie. Croissant wafer halvah dessert sweet pie tiramisu I love cheesecake. Sweet bear claw dessert lollipop donut. Lollipop cookie jujubes marzipan. Pudding cupcake macaroon chupa chups pie candy canes. Biscuit bear claw donut marzipan. Tiramisu sweet roll lemon drops carrot cake gingerbread toffee. Marzipan dragée cake candy icing.</p>
+            <div class="container">
+    
+                <div class="col-12 col-sm-4 col-md-3 order-sm-last">
+                    <h3>Panama Hotel </h3>
+                </div>
+                <div class="col col-sm col-md order-sm-first">
+                    <div class="media">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="uthappizza">
+                        <div class="media-body">
+                            <h2 class="mt-0">Panama Hotel <span class="badge badge-danger"> HOT </span>
+                                <span class="badge badge-pill badge-secondary"> $4.99 </span></h2>
+                                <!-- TODO fix rest of p tags -->
+                            <p>Gingerbread cake jujubes. Sweet roll I love cake oat cake dessert chocolate cake. Fruitcake soufflé cookie. Croissant wafer halvah dessert sweet pie tiramisu I love cheesecake. Sweet bear claw dessert lollipop donut. Lollipop cookie jujubes marzipan. Pudding cupcake macaroon chupa chups pie candy canes. Biscuit bear claw donut marzipan. Tiramisu sweet roll lemon drops carrot cake gingerbread toffee. Marzipan dragée cake candy icing.</p>
+                        </div>
                     </div>
                 </div>
+    
             </div>
-
         </div>
-    </div>
-    <div class="row row-content align-items-center">
-        <div class="container">
-
-            <div class="col-12 col-sm-4 col-md-3">
-                <h3>Wing Luck Museum </h3>
-            </div>
-            <div class="col col-sm col-md">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="buffet">
-                    <div class="media-body">
-                        <h2 class="mt=0">Walking Tour <span class="badge badge-danger"> NEW </span></h2>
-                        <p class="d-none d-sm-block">Donut jelly beans macaroon sweet I love cookie chupa chups donut. Powder pudding oat cake lollipop lemon drops chupa chups. Brownie croissant gummies soufflé apple pie soufflé tiramisu biscuit cookie. Gummies I love marzipan toffee gingerbread. Cake icing tiramisu cake gummi bears. Gingerbread carrot cake marzipan apple pie icing cake cheesecake cheesecake. Marshmallow wafer I love sweet roll cake I love cotton candy pie pie. I love croissant candy canes dragée danish. Chocolate bar muffin marshmallow brownie liquorice candy lemon drops I love gummies. Pudding lollipop I love apple pie gummi bears.</p>
+        <div class="row row-content align-items-center">
+            <div class="container">
+    
+                <div class="col-12 col-sm-4 col-md-3">
+                    <h3>Wing Luck Museum </h3>
+                </div>
+                <div class="col col-sm col-md">
+                    <div class="media">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="buffet">
+                        <div class="media-body">
+                            <h2 class="mt=0">Walking Tour <span class="badge badge-danger"> NEW </span></h2>
+                            <p class="d-none d-sm-block">Donut jelly beans macaroon sweet I love cookie chupa chups donut. Powder pudding oat cake lollipop lemon drops chupa chups. Brownie croissant gummies soufflé apple pie soufflé tiramisu biscuit cookie. Gummies I love marzipan toffee gingerbread. Cake icing tiramisu cake gummi bears. Gingerbread carrot cake marzipan apple pie icing cake cheesecake cheesecake. Marshmallow wafer I love sweet roll cake I love cotton candy pie pie. I love croissant candy canes dragée danish. Chocolate bar muffin marshmallow brownie liquorice candy lemon drops I love gummies. Pudding lollipop I love apple pie gummi bears.</p>
+                        </div>
                     </div>
                 </div>
+    
             </div>
-
+            
         </div>
-        
-    </div>
-    <div class="row row-content align-items-center">
-        <div class="container">
-
-            <div class="col-12 col-sm-4 col-md-3 order-sm-last">
-                <h3>Canton Alley</h3>
-            </div>
-            <div class="col col-sm col-md order-sm-first">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="alberto">
-                    <div class="media-body">
-                        <h2 class="mt=0">Walking Tour</h2>
-                        <h4>Walking Tour</h4>
-                        <p class="d-none d-sm-block">Soufflé chocolate cotton candy donut. Gummi bears cupcake pudding chocolate cake. Chocolate cake dragée marshmallow. Toffee chupa chups sweet roll topping.</p>
-                    </div>
+        <div class="row row-content align-items-center">
+            <div class="container">
+    
+                <div class="col-12 col-sm-4 col-md-3 order-sm-last">
+                    <h3>Canton Alley</h3>
                 </div>
-            </div>
-
-        </div>
-        
-    </div>
-    <div class="row row-content align-items-center">
-        <div class="container">
-
-            <div class="col-12 col-sm-4 col-md-3 order-sm-last">
-                <h3>South Jackson</h3>
-            </div>
-            <div class="col col-sm col-md order-sm-first">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="alberto">
-                    <div class="media-body">
-                        <h2 class="mt=0">Walking Tour</h2>
-                        <h4>Walking Tour</h4>
-                        <p class="d-none d-sm-block">Toffee jujubes pie gingerbread pie soufflé. Sweet bear claw chocolate cake. Cookie sugar plum cupcake macaroon sesame snaps gingerbread lemon drops sweet. Donut toffee soufflé.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        
-    </div>
-    <div class="row row-content align-items-center">
-        <div class="container">
-
-            <div class="col-12 col-sm-4 col-md-3 order-sm-last">
-                <h3>Nippon Kan Theater</h3>
-            </div>
-            <div class="col col-sm col-md order-sm-first">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="alberto">
-                    <div class="media-body">
-                        <h2 class="mt=0">Walking Tour</h2>
-                        <h4>Walking Tour</h4>
-                        <p class="d-none d-sm-block">Croissant chupa chups cake marshmallow ice cream I love brownie muffin bear claw. Sweet chupa chups jelly cake apple pie muffin. Cake cake donut pastry. Icing croissant sugar plum carrot cake gummies jujubes powder.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        
-    </div>
-    <div class="row row-content align-items-center">
-        <div class="container">
-
-            <div class="col-12 col-sm-4 col-md-3 order-sm-last">
-                <h3>China Gate Restaurant</h3>
-            </div>
-            <div class="col col-sm col-md order-sm-first">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="alberto">
-                    <div class="media-body">
-                        <h2 class="mt=0">Walking Tour</h2>
-                        <h4>Walking Tour</h4>
-                        <p class="d-none d-sm-block">Cupcake sesame snaps donut chocolate bar bonbon bear claw cookie dragée tart. Tiramisu bonbon jujubes halvah gummies powder I love croissant halvah. Marshmallow cupcake biscuit chocolate bar.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        
-    </div>
-    <div class="row row-content align-items-center">
-        <div class="container">
-
-            <div class="col-12 col-sm-4 col-md-3 order-sm-last">
-                <h3>Chong Wa Benevolent Association</h3>
-            </div>
-            <div class="col col-sm col-md order-sm-first">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="alberto">
-                    <div class="media-body">
-                        <h2 class="mt=0">Walking Tour</h2>
-                        <h4>Walking Tour</h4>
-                        <p class="d-none d-sm-block">Cupcake sesame snaps donut chocolate bar bonbon bear claw cookie dragée tart. Tiramisu bonbon jujubes halvah gummies powder I love croissant halvah. Marshmallow cupcake biscuit chocolate bar.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        
-    </div>
-    <div class="row row-content align-items-center">
-        <div class="container">
-
-            <div class="col-12 col-sm-4 col-md-3 order-sm-last">
-                <h3>Bing Kung Association </h3>
-            </div>
-            <div class="col col-sm col-md order-sm-first">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="alberto">
-                    <div class="media-body">
-                        <h2 class="mt=0">Walking Tour</h2>
-                        <h4>Walking Tour</h4>
-                        <p class="d-none d-sm-block">Donut jelly beans I love marzipan chupa chups I love chocolate bar halvah I love. Caramels chocolate chocolate apple pie gummi bears jujubes. I love cake cake caramels carrot cake cake. Jelly-o cookie croissant donut chocolate bar dragée lemon drops pie.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        
-    </div>
-    <div class="row row-content align-items-center">
-        <div class="container">
-
-            <div class="col-12 col-sm-4 col-md-3 order-sm-last">
-                <h3>Mon Hei Bakery </h3>
-            </div>
-            <div class="col col-sm col-md order-sm-first">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="alberto">
-                    <div class="media-body">
-                        <h2 class="mt=0">Walking Tour</h2>
-                        <h4>Walking Tour</h4>
-                        <p class="d-none d-sm-block">Cheesecake danish ice cream wafer marzipan chocolate gingerbread lollipop. Biscuit toffee jelly beans cupcake sweet roll chocolate bar. Chocolate cake icing candy canes pie chocolate powder gummi bears wafer cupcake.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        
-    </div>
-    <div class="row row-content align-items-center">
-        <div class="container">
-
-            <div class="col-12 col-sm-4 col-md-3 order-sm-last">
-                <h3>Higo Variety Store </h3>
-            </div>
-            <div class="col col-sm col-md order-sm-first">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="alberto">
-                    <div class="media-body">
-                        <h2 class="mt=0">Walking Tour</h2>
-                        <h4>Walking Tour</h4>
-                        <p class="d-none d-sm-block">Macaroon powder sweet marzipan gingerbread liquorice carrot cake marshmallow. Lollipop cotton candy toffee brownie ice cream caramels wafer. Topping cookie cake chocolate chocolate candy canes. Pie powder lollipop I love wafer icing liquorice cheesecake gummies.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        
-    </div>
-    <div class="row row-content align-items-center">
-        <div class="container">
-
-            <div class="col-12 col-sm-4 col-md-3 order-sm-last">
-                <h3>Uwajimaya </h3>
-            </div>
                 <div class="col col-sm col-md order-sm-first">
                     <div class="media">
                         <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="alberto">
                         <div class="media-body">
                             <h2 class="mt=0">Walking Tour</h2>
                             <h4>Walking Tour</h4>
-                            <p class="d-none d-sm-block">Carrot cake toffee pudding cupcake jelly beans pudding apple pie chocolate bar lollipop. Sugar plum pudding pastry bonbon carrot cake lemon drops candy. Tootsie roll danish cheesecake marshmallow pudding sugar plum candy chocolate bar. Jelly-o cotton candy I love donut tart jelly-o.</p>
+                            <p class="d-none d-sm-block">Soufflé chocolate cotton candy donut. Gummi bears cupcake pudding chocolate cake. Chocolate cake dragée marshmallow. Toffee chupa chups sweet roll topping.</p>
                         </div>
                     </div>
                 </div>
-
-        </div>
-        
-    </div>
-    <div class="row row-content align-items-center">
-        <div class="container">
-
-            <div class="col-12 col-sm-4 col-md-3 order-sm-last">
-                <h3>Union Station </h3>
+    
             </div>
-            <div class="col col-sm col-md order-sm-first">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="alberto">
-                    <div class="media-body">
-                        <h2 class="mt=0">Walking Tour</h2>
-                        <h4>Walking Tour</h4>
-                        <p class="d-none d-sm-block">Dragée caramels chocolate cheesecake marzipan chupa chups muffin sweet topping. Liquorice chocolate candy canes bonbon lollipop wafer jelly cake chocolate cake. Muffin gummies bear claw croissant dragée danish. Gummies dessert lollipop croissant fruitcake pudding tart pastry danish.</p>
+            
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="container">
+    
+                <div class="col-12 col-sm-4 col-md-3 order-sm-last">
+                    <h3>South Jackson</h3>
+                </div>
+                <div class="col col-sm col-md order-sm-first">
+                    <div class="media">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="alberto">
+                        <div class="media-body">
+                            <h2 class="mt=0">Walking Tour</h2>
+                            <h4>Walking Tour</h4>
+                            <p class="d-none d-sm-block">Toffee jujubes pie gingerbread pie soufflé. Sweet bear claw chocolate cake. Cookie sugar plum cupcake macaroon sesame snaps gingerbread lemon drops sweet. Donut toffee soufflé.</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="container">
+    
+                <div class="col-12 col-sm-4 col-md-3 order-sm-last">
+                    <h3>Nippon Kan Theater</h3>
+                </div>
+                <div class="col col-sm col-md order-sm-first">
+                    <div class="media">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="alberto">
+                        <div class="media-body">
+                            <h2 class="mt=0">Walking Tour</h2>
+                            <h4>Walking Tour</h4>
+                            <p class="d-none d-sm-block">Croissant chupa chups cake marshmallow ice cream I love brownie muffin bear claw. Sweet chupa chups jelly cake apple pie muffin. Cake cake donut pastry. Icing croissant sugar plum carrot cake gummies jujubes powder.</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="container">
+    
+                <div class="col-12 col-sm-4 col-md-3 order-sm-last">
+                    <h3>China Gate Restaurant</h3>
+                </div>
+                <div class="col col-sm col-md order-sm-first">
+                    <div class="media">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="alberto">
+                        <div class="media-body">
+                            <h2 class="mt=0">Walking Tour</h2>
+                            <h4>Walking Tour</h4>
+                            <p class="d-none d-sm-block">Cupcake sesame snaps donut chocolate bar bonbon bear claw cookie dragée tart. Tiramisu bonbon jujubes halvah gummies powder I love croissant halvah. Marshmallow cupcake biscuit chocolate bar.</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="container">
+    
+                <div class="col-12 col-sm-4 col-md-3 order-sm-last">
+                    <h3>Chong Wa Benevolent Association</h3>
+                </div>
+                <div class="col col-sm col-md order-sm-first">
+                    <div class="media">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="alberto">
+                        <div class="media-body">
+                            <h2 class="mt=0">Walking Tour</h2>
+                            <h4>Walking Tour</h4>
+                            <p class="d-none d-sm-block">Cupcake sesame snaps donut chocolate bar bonbon bear claw cookie dragée tart. Tiramisu bonbon jujubes halvah gummies powder I love croissant halvah. Marshmallow cupcake biscuit chocolate bar.</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="container">
+    
+                <div class="col-12 col-sm-4 col-md-3 order-sm-last">
+                    <h3>Bing Kung Association </h3>
+                </div>
+                <div class="col col-sm col-md order-sm-first">
+                    <div class="media">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="alberto">
+                        <div class="media-body">
+                            <h2 class="mt=0">Walking Tour</h2>
+                            <h4>Walking Tour</h4>
+                            <p class="d-none d-sm-block">Donut jelly beans I love marzipan chupa chups I love chocolate bar halvah I love. Caramels chocolate chocolate apple pie gummi bears jujubes. I love cake cake caramels carrot cake cake. Jelly-o cookie croissant donut chocolate bar dragée lemon drops pie.</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="container">
+    
+                <div class="col-12 col-sm-4 col-md-3 order-sm-last">
+                    <h3>Mon Hei Bakery </h3>
+                </div>
+                <div class="col col-sm col-md order-sm-first">
+                    <div class="media">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="alberto">
+                        <div class="media-body">
+                            <h2 class="mt=0">Walking Tour</h2>
+                            <h4>Walking Tour</h4>
+                            <p class="d-none d-sm-block">Cheesecake danish ice cream wafer marzipan chocolate gingerbread lollipop. Biscuit toffee jelly beans cupcake sweet roll chocolate bar. Chocolate cake icing candy canes pie chocolate powder gummi bears wafer cupcake.</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="container">
+    
+                <div class="col-12 col-sm-4 col-md-3 order-sm-last">
+                    <h3>Higo Variety Store </h3>
+                </div>
+                <div class="col col-sm col-md order-sm-first">
+                    <div class="media">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="alberto">
+                        <div class="media-body">
+                            <h2 class="mt=0">Walking Tour</h2>
+                            <h4>Walking Tour</h4>
+                            <p class="d-none d-sm-block">Macaroon powder sweet marzipan gingerbread liquorice carrot cake marshmallow. Lollipop cotton candy toffee brownie ice cream caramels wafer. Topping cookie cake chocolate chocolate candy canes. Pie powder lollipop I love wafer icing liquorice cheesecake gummies.</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="container">
+    
+                <div class="col-12 col-sm-4 col-md-3 order-sm-last">
+                    <h3>Uwajimaya </h3>
+                </div>
+                    <div class="col col-sm col-md order-sm-first">
+                        <div class="media">
+                            <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="alberto">
+                            <div class="media-body">
+                                <h2 class="mt=0">Walking Tour</h2>
+                                <h4>Walking Tour</h4>
+                                <p class="d-none d-sm-block">Carrot cake toffee pudding cupcake jelly beans pudding apple pie chocolate bar lollipop. Sugar plum pudding pastry bonbon carrot cake lemon drops candy. Tootsie roll danish cheesecake marshmallow pudding sugar plum candy chocolate bar. Jelly-o cotton candy I love donut tart jelly-o.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+            </div>
+            
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="container">
+    
+                <div class="col-12 col-sm-4 col-md-3 order-sm-last">
+                    <h3>Union Station </h3>
+                </div>
+                <div class="col col-sm col-md order-sm-first">
+                    <div class="media">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="alberto">
+                        <div class="media-body">
+                            <h2 class="mt=0">Walking Tour</h2>
+                            <h4>Walking Tour</h4>
+                            <p class="d-none d-sm-block">Dragée caramels chocolate cheesecake marzipan chupa chups muffin sweet topping. Liquorice chocolate candy canes bonbon lollipop wafer jelly cake chocolate cake. Muffin gummies bear claw croissant dragée danish. Gummies dessert lollipop croissant fruitcake pudding tart pastry danish.</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="container">
+                <div class="col-12 col-sm-4 col-md-3 order-sm-last">
+                    <h3>Bud's Jazz Records </h3>
+                </div>
+                <div class="col col-sm col-md order-sm-first">
+                    <div class="media">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="alberto">
+                        <div class="media-body">
+                            <h2 class="mt=0">Walking Tour</h2>
+                            <h4>Walking Tour</h4>
+                            <p class="d-none d-sm-block">Topping wafer biscuit. Biscuit lemon drops jelly chocolate cake pastry tart bear claw liquorice. Macaroon cotton candy chocolate brownie chocolate bar. Chocolate cake cheesecake bear claw.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
+            
         </div>
-        
     </div>
-    <div class="row row-content align-items-center">
-        <div class="container">
-            <div class="col-12 col-sm-4 col-md-3 order-sm-last">
-                <h3>Bud's Jazz Records </h3>
+    <div class="container d-sm-none" id="walkingTourAccordion">
+    
+        <!--  accordion here -->
+
+        <div>
+            <h2>Simple Collapsible</h2>
+            <p>Click on the button to toggle between showing and hiding content.</p>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+            <!--  data-target id matches div id  -->
+            <div id="demo" class="collapse">
+                Run a rig case shot gangway matey cutlass lanyard hang the jib lass Spanish Main gaff. Aft belaying pin belay measured fer yer chains scallywag gaff plunder sutler wench long boat. Mizzen scallywag square-rigged  main sheet dance the hempen jig swab cog Yellow Jack pink tackle. Careen furl hogshead hands topgallant blow the man down gun Corsair no prey, no pay pink. Prow mizzen bilge water fire ship weigh anchor cackle fruit Sink me wench pinnace black spot. Poop deck line hulk lass hang the jib capstan bowsprit yawl killick Arr.
             </div>
-            <div class="col col-sm col-md order-sm-first">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/footprintLogo.png" alt="alberto">
-                    <div class="media-body">
-                        <h2 class="mt=0">Walking Tour</h2>
-                        <h4>Walking Tour</h4>
-                        <p class="d-none d-sm-block">Topping wafer biscuit. Biscuit lemon drops jelly chocolate cake pastry tart bear claw liquorice. Macaroon cotton candy chocolate brownie chocolate bar. Chocolate cake cheesecake bear claw.</p>
+    </div>
+
+        <div class="row row-content">
+            <div class="col-12">
+                <h2>Corporate Leadership</h2>
+                <div id="accordion">
+                    <!--  TODO match ids and build rest of places-->
+                    <!--Panama Hotel's accordion card-->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="panamaHotelHead">
+                            <h3 class="mb-0">
+                                <a data-toggle="collapse" data-target="#panamaHotel">Panama Hotel <small>Walking Tour - The Basement </small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse show" id="panamaHotel" data-parent="#accordion">
+                            <div class="card-body">
+                                <!-- TODO fix rest of p tags -->
+                                <p>Instant robust, frappuccino, turkish milk filter fair trade shop. A, frappuccino crema, half and half, at cultivar skinny percolator dripper cappuccino redeye. Coffee, galão white java aromatic, extraction rich coffee aromatic frappuccino aftertaste. Kopi-luwak coffee ristretto, bar qui ut saucer id rich trifecta.
+
+                                Breve cappuccino, white, aged steamed dripper java and doppio milk robusta. Dark viennese, medium ristretto, cortado crema cultivar percolator bar whipped. Wings body latte dark breve extra aromatic. Americano mocha, irish saucer irish cultivar cappuccino beans instant.
+                                    
+                                Cinnamon robust, instant organic, latte, dripper french press a wings con panna iced steamed. Viennese at plunger pot breve iced in half and half. Strong, pumpkin spice dripper java so, single origin as americano percolator froth. Macchiato java mocha extra, body extra at est shop barista.
+                                    
+                                Ut grinder body, lungo sweet percolator barista cup spoon. Eu, cappuccino that extraction turkish lungo carajillo. Cream carajillo body flavour, percolator at latte americano bar frappuccino. Galão blue mountain, beans a pumpkin spice sweet, strong percolator frappuccino cup spoon.
+                                </p>
+                            </div>      
+                        </div>
+                    </div>
+                    <!--Wing Luke Museum's accordion card-->
+                    <div class="card"> 
+                        <div class="card-header" role="tab" id="wingLukeMuseumHead">
+                            <h3 class="mb-0">
+                                <a class="collapsed"data-toggle="collapse" data-target="#wingLukeMuseum">Wing Luke Museum <small>Walking Tour - The Story </small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse" id="wingLukeMuseum" data-parent="#accordion">
+                            <div class="card-body"> 
+                                <p class="d-none d-sm-block">Instant robust, frappuccino, turkish milk filter fair trade shop. A, frappuccino crema, half and half, at cultivar skinny percolator dripper cappuccino redeye. Coffee, galão white java aromatic, extraction rich coffee aromatic frappuccino aftertaste. Kopi-luwak coffee ristretto, bar qui ut saucer id rich trifecta.
+
+                                Breve cappuccino, white, aged steamed dripper java and doppio milk robusta. Dark viennese, medium ristretto, cortado crema cultivar percolator bar whipped. Wings body latte dark breve extra aromatic. Americano mocha, irish saucer irish cultivar cappuccino beans instant.
+                                    
+                                Cinnamon robust, instant organic, latte, dripper french press a wings con panna iced steamed. Viennese at plunger pot breve iced in half and half. Strong, pumpkin spice dripper java so, single origin as americano percolator froth. Macchiato java mocha extra, body extra at est shop barista.
+                                    
+                                Ut grinder body, lungo sweet percolator barista cup spoon. Eu, cappuccino that extraction turkish lungo carajillo. Cream carajillo body flavour, percolator at latte americano bar frappuccino. Galão blue mountain, beans a pumpkin spice sweet, strong percolator frappuccino cup spoon.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Canton Alley's accordion card-->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="cantonAlleyHead">
+                            <h3 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" data-target="#cantonAlley">Canton Alley <small>Walking Tour - Home Sweet Home  </small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse" id="cantonAlley" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Instant robust, frappuccino, turkish milk filter fair trade shop. A, frappuccino crema, half and half, at cultivar skinny percolator dripper cappuccino redeye. Coffee, galão white java aromatic, extraction rich coffee aromatic frappuccino aftertaste. Kopi-luwak coffee ristretto, bar qui ut saucer id rich trifecta.
+
+                                Breve cappuccino, white, aged steamed dripper java and doppio milk robusta. Dark viennese, medium ristretto, cortado crema cultivar percolator bar whipped. Wings body latte dark breve extra aromatic. Americano mocha, irish saucer irish cultivar cappuccino beans instant.
+                                
+                                Cinnamon robust, instant organic, latte, dripper french press a wings con panna iced steamed. Viennese at plunger pot breve iced in half and half. Strong, pumpkin spice dripper java so, single origin as americano percolator froth. Macchiato java mocha extra body extra at est shop barista.
+                                
+                                Ut grinder body, lungo sweet percolator barista cup spoon. Eu, cappuccino that extraction turkish lungo carajillo. Cream carajillo body flavour, percolator at latte americano bar frappuccino. Galão blue mountain, beans a pumpkin spice sweet, strong percolator frappuccino cup spoon.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--South Jackson's accordion card-->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="southJacksonHead">
+                            <h3 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" data-target="#southJackson">South Jackson <small>Walking Tour - Alley Cat Strut</small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse" id="southJackson" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Instant robust, frappuccino, turkish milk filter fair trade shop. A, frappuccino crema, half and half, at cultivar skinny percolator dripper cappuccino redeye. Coffee, galão white java aromatic, extraction rich coffee aromatic frappuccino aftertaste. Kopi-luwak coffee ristretto, bar qui ut saucer id rich trifecta.
+
+                                Breve cappuccino, white, aged steamed dripper java and doppio milk robusta. Dark viennese, medium ristretto, cortado crema cultivar percolator bar whipped. Wings body latte dark breve extra aromatic. Americano mocha, irish saucer irish cultivar cappuccino beans instant.
+                                        
+                                Cinnamon robust, instant organic, latte, dripper french press a wings con panna iced steamed. Viennese at plunger pot breve iced in half and half. Strong, pumpkin spice dripper java so, single origin as americano percolator froth. Macchiato java mocha extra body extra at est shop barista.
+                                        
+                                Ut grinder body, lungo sweet percolator barista cup spoon. Eu, cappuccino that extraction turkish lungo carajillo. Cream carajillo body flavour, percolator at latte americano bar frappuccino. Galão blue mountain, beans a pumpkin spice sweet, strong percolator frappuccino cup spoon.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Nippon Kan Theater's card  -->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="nipponKanTheaterHead">
+                            <h3 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" data-target="#nipponKanTheater">Nippon Kan Theater <small>Walking Tour - meeting at the park across the street </small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse" id="nipponKanTheater" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Instant robust, frappuccino, turkish milk filter fair trade shop. A, frappuccino crema, half and half, at cultivar skinny percolator dripper cappuccino redeye. Coffee, galão white java aromatic, extraction rich coffee aromatic frappuccino aftertaste. Kopi-luwak coffee ristretto, bar qui ut saucer id rich trifecta.
+
+                                Breve cappuccino, white, aged steamed dripper java and doppio milk robusta. Dark viennese, medium ristretto, cortado crema cultivar percolator bar whipped. Wings body latte dark breve extra aromatic. Americano mocha, irish saucer irish cultivar cappuccino beans instant.
+                                    
+                                Cinnamon robust, instant organic, latte, dripper french press a wings con panna iced steamed. Viennese at plunger pot breve iced in half and half. Strong, pumpkin spice dripper java so, single origin as americano percolator froth. Macchiato java mocha extra, body extra at est shop barista.
+                                    
+                                Ut grinder body, lungo sweet percolator barista cup spoon. Eu, cappuccino that extraction turkish lungo carajillo. Cream carajillo body flavour, percolator at latte americano bar frappuccino. Galão blue mountain, beans a pumpkin spice sweet, strong percolator frappuccino cup spoon.
+                                </p>
+                            </div>      
+                        </div>
+                    </div>
+                    <!-- China Gate Restaurant's card  -->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="chinaGateRestaurantHead">
+                            <h3 class="mb-0">
+                                <a class="collapsed"
+                                data-toggle="collapse" data-target="#chinaGateRestaurant">China Gate Resturant <small>Walking Tour - Cab Calloway and Duke Ellington </small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse" id="chinaGateRestaurant" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Instant robust, frappuccino, turkish milk filter fair trade shop. A, frappuccino crema, half and half, at cultivar skinny percolator dripper cappuccino redeye. Coffee, galão white java aromatic, extraction rich coffee aromatic frappuccino aftertaste. Kopi-luwak coffee ristretto, bar qui ut saucer id rich trifecta.
+
+                                Breve cappuccino, white, aged steamed dripper java and doppio milk robusta. Dark viennese, medium ristretto, cortado crema cultivar percolator bar whipped. Wings body latte dark breve extra aromatic. Americano mocha, irish saucer irish cultivar cappuccino beans instant.
+                                    
+                                Cinnamon robust, instant organic, latte, dripper french press a wings con panna iced steamed. Viennese at plunger pot breve iced in half and half. Strong, pumpkin spice dripper java so, single origin as americano percolator froth. Macchiato java mocha extra, body extra at est shop barista.
+                                    
+                                Ut grinder body, lungo sweet percolator barista cup spoon. Eu, cappuccino that extraction turkish lungo carajillo. Cream carajillo body flavour, percolator at latte americano bar frappuccino. Galão blue mountain, beans a pumpkin spice sweet, strong percolator frappuccino cup spoon.
+                                </p>
+                            </div>      
+                        </div>
+                    </div>
+                    <!-- Chong Wa Ben Association's card  -->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="chongWaBenAssociationHead">
+                            <h3 class="mb-0">
+                                <a class="collapsed"
+                                data-toggle="collapse" data-target="#chongWaBenAssociation">Chong Wa Ben Association <small>Walking Tour - call for a boycott of the entire Japanese community </small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse" id="chongWaBenAssociation" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Instant robust, frappuccino, turkish milk filter fair trade shop. A, frappuccino crema, half and half, at cultivar skinny percolator dripper cappuccino redeye. Coffee, galão white java aromatic, extraction rich coffee aromatic frappuccino aftertaste. Kopi-luwak coffee ristretto, bar qui ut saucer id rich trifecta.
+
+                                Breve cappuccino, white, aged steamed dripper java and doppio milk robusta. Dark viennese, medium ristretto, cortado crema cultivar percolator bar whipped. Wings body latte dark breve extra aromatic. Americano mocha, irish saucer irish cultivar cappuccino beans instant.
+                                    
+                                Cinnamon robust, instant organic, latte, dripper french press a wings con panna iced steamed. Viennese at plunger pot breve iced in half and half. Strong, pumpkin spice dripper java so, single origin as americano percolator froth. Macchiato java mocha extra, body extra at est shop barista.
+                                    
+                                Ut grinder body, lungo sweet percolator barista cup spoon. Eu, cappuccino that extraction turkish lungo carajillo. Cream carajillo body flavour, percolator at latte americano bar frappuccino. Galão blue mountain, beans a pumpkin spice sweet, strong percolator frappuccino cup spoon.
+                                </p>
+                            </div>      
+                        </div>
+                    </div>
+                    <!-- Bing Kung Association's card  -->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="bingKungAssociationHead">
+                            <h3 class="mb-0">
+                                <a class="collapsed"
+                                data-toggle="collapse" data-target="#bingKungAssociation">Bing Kung Association <small>Walking Tour - Henry's family's committee </small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse" id="bingKungAssociation" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Instant robust, frappuccino, turkish milk filter fair trade shop. A, frappuccino crema, half and half, at cultivar skinny percolator dripper cappuccino redeye. Coffee, galão white java aromatic, extraction rich coffee aromatic frappuccino aftertaste. Kopi-luwak coffee ristretto, bar qui ut saucer id rich trifecta.
+
+                                Breve cappuccino, white, aged steamed dripper java and doppio milk robusta. Dark viennese, medium ristretto, cortado crema cultivar percolator bar whipped. Wings body latte dark breve extra aromatic. Americano mocha, irish saucer irish cultivar cappuccino beans instant.
+                                    
+                                Cinnamon robust, instant organic, latte, dripper french press a wings con panna iced steamed. Viennese at plunger pot breve iced in half and half. Strong, pumpkin spice dripper java so, single origin as americano percolator froth. Macchiato java mocha extra, body extra at est shop barista.
+                                    
+                                Ut grinder body, lungo sweet percolator barista cup spoon. Eu, cappuccino that extraction turkish lungo carajillo. Cream carajillo body flavour, percolator at latte americano bar frappuccino. Galão blue mountain, beans a pumpkin spice sweet, strong percolator frappuccino cup spoon.
+                                </p>
+                            </div>      
+                        </div>
+                    </div>
+                    <!-- Mon Hei Bakery's card  -->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="monHeiBakeryHead">
+                            <h3 class="mb-0">
+                                <a class="collapsed"
+                                data-toggle="collapse" data-target="#monHeiBakery">Mon Hei Bakery <small>Walking Tour - carrot mooncakes on cool autumn evenings </small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse" id="monHeiBakery" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Instant robust, frappuccino, turkish milk filter fair trade shop. A, frappuccino crema, half and half, at cultivar skinny percolator dripper cappuccino redeye. Coffee, galão white java aromatic, extraction rich coffee aromatic frappuccino aftertaste. Kopi-luwak coffee ristretto, bar qui ut saucer id rich trifecta.
+
+                                Breve cappuccino, white, aged steamed dripper java and doppio milk robusta. Dark viennese, medium ristretto, cortado crema cultivar percolator bar whipped. Wings body latte dark breve extra aromatic. Americano mocha, irish saucer irish cultivar cappuccino beans instant.
+                                    
+                                Cinnamon robust, instant organic, latte, dripper french press a wings con panna iced steamed. Viennese at plunger pot breve iced in half and half. Strong, pumpkin spice dripper java so, single origin as americano percolator froth. Macchiato java mocha extra, body extra at est shop barista.
+                                    
+                                Ut grinder body, lungo sweet percolator barista cup spoon. Eu, cappuccino that extraction turkish lungo carajillo. Cream carajillo body flavour, percolator at latte americano bar frappuccino. Galão blue mountain, beans a pumpkin spice sweet, strong percolator frappuccino cup spoon.
+                                </p>
+                            </div>      
+                        </div>
+                    </div>
+                    <!-- Higo Variety Store's card  -->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="higoVarietyStore">
+                            <h3 class="mb-0">
+                                <a class="collapsed"
+                                data-toggle="collapse" data-target="#higoVarietyStore">Higo Variety Store <small>Walking Tour - not in book??? </small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse" id="higoVarietyStore" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Instant robust, frappuccino, turkish milk filter fair trade shop. A, frappuccino crema, half and half, at cultivar skinny percolator dripper cappuccino redeye. Coffee, galão white java aromatic, extraction rich coffee aromatic frappuccino aftertaste. Kopi-luwak coffee ristretto, bar qui ut saucer id rich trifecta.
+
+                                Breve cappuccino, white, aged steamed dripper java and doppio milk robusta. Dark viennese, medium ristretto, cortado crema cultivar percolator bar whipped. Wings body latte dark breve extra aromatic. Americano mocha, irish saucer irish cultivar cappuccino beans instant.
+                                    
+                                Cinnamon robust, instant organic, latte, dripper french press a wings con panna iced steamed. Viennese at plunger pot breve iced in half and half. Strong, pumpkin spice dripper java so, single origin as americano percolator froth. Macchiato java mocha extra, body extra at est shop barista.
+                                    
+                                Ut grinder body, lungo sweet percolator barista cup spoon. Eu, cappuccino that extraction turkish lungo carajillo. Cream carajillo body flavour, percolator at latte americano bar frappuccino. Galão blue mountain, beans a pumpkin spice sweet, strong percolator frappuccino cup spoon.
+                                </p>
+                            </div>      
+                        </div>
+                    </div>
+                    <!-- Uwajimaya's card  -->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="uwajimayaHead">
+                            <h3 class="mb-0">
+                                <a class="collapsed"
+                                data-toggle="collapse" data-target="#uwajimaya">Uwajimaya <small>Walking Tour - Samantha's shopping trip: black bean crab, choy sum with spiced oyster sauce, and dragon's beard candy </small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse" id="uwajimaya" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Instant robust, frappuccino, turkish milk filter fair trade shop. A, frappuccino crema, half and half, at cultivar skinny percolator dripper cappuccino redeye. Coffee, galão white java aromatic, extraction rich coffee aromatic frappuccino aftertaste. Kopi-luwak coffee ristretto, bar qui ut saucer id rich trifecta.
+
+                                Breve cappuccino, white, aged steamed dripper java and doppio milk robusta. Dark viennese, medium ristretto, cortado crema cultivar percolator bar whipped. Wings body latte dark breve extra aromatic. Americano mocha, irish saucer irish cultivar cappuccino beans instant.
+                                    
+                                Cinnamon robust, instant organic, latte, dripper french press a wings con panna iced steamed. Viennese at plunger pot breve iced in half and half. Strong, pumpkin spice dripper java so, single origin as americano percolator froth. Macchiato java mocha extra, body extra at est shop barista.
+                                    
+                                Ut grinder body, lungo sweet percolator barista cup spoon. Eu, cappuccino that extraction turkish lungo carajillo. Cream carajillo body flavour, percolator at latte americano bar frappuccino. Galão blue mountain, beans a pumpkin spice sweet, strong percolator frappuccino cup spoon.
+                                </p>
+                            </div>      
+                        </div>
+                    </div>
+                    <!-- Union Station's card  -->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="unionStationHead">
+                            <h3 class="mb-0">
+                                <a class="collapsed"
+                                data-toggle="collapse" data-target="#unionStation">Union Station <small>Walking Tour - the central assembly area for the residents of Nihonmachi </small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse" id="unionStation" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Instant robust, frappuccino, turkish milk filter fair trade shop. A, frappuccino crema, half and half, at cultivar skinny percolator dripper cappuccino redeye. Coffee, galão white java aromatic, extraction rich coffee aromatic frappuccino aftertaste. Kopi-luwak coffee ristretto, bar qui ut saucer id rich trifecta.
+
+                                Breve cappuccino, white, aged steamed dripper java and doppio milk robusta. Dark viennese, medium ristretto, cortado crema cultivar percolator bar whipped. Wings body latte dark breve extra aromatic. Americano mocha, irish saucer irish cultivar cappuccino beans instant.
+                                    
+                                Cinnamon robust, instant organic, latte, dripper french press a wings con panna iced steamed. Viennese at plunger pot breve iced in half and half. Strong, pumpkin spice dripper java so, single origin as americano percolator froth. Macchiato java mocha extra, body extra at est shop barista.
+                                    
+                                Ut grinder body, lungo sweet percolator barista cup spoon. Eu, cappuccino that extraction turkish lungo carajillo. Cream carajillo body flavour, percolator at latte americano bar frappuccino. Galão blue mountain, beans a pumpkin spice sweet, strong percolator frappuccino cup spoon.
+                                </p>
+                            </div>      
+                        </div>
+                    </div>
+                    <!-- Buds Jazz Records card  -->
+                    <div class="card">
+                        <div class="card-header" role="tab" id="budsJazzRecordsHead">
+                            <h3 class="mb-0">
+                                <a class="collapsed"
+                                data-toggle="collapse" data-target="#budsJazzRecords">Bud's Jazz Records <small>Walking Tour - searching for Oscar Holden </small>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse" id="budsJazzRecords" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Instant robust, frappuccino, turkish milk filter fair trade shop. A, frappuccino crema, half and half, at cultivar skinny percolator dripper cappuccino redeye. Coffee, galão white java aromatic, extraction rich coffee aromatic frappuccino aftertaste. Kopi-luwak coffee ristretto, bar qui ut saucer id rich trifecta.
+
+                                Breve cappuccino, white, aged steamed dripper java and doppio milk robusta. Dark viennese, medium ristretto, cortado crema cultivar percolator bar whipped. Wings body latte dark breve extra aromatic. Americano mocha, irish saucer irish cultivar cappuccino beans instant.
+                                    
+                                Cinnamon robust, instant organic, latte, dripper french press a wings con panna iced steamed. Viennese at plunger pot breve iced in half and half. Strong, pumpkin spice dripper java so, single origin as americano percolator froth. Macchiato java mocha extra, body extra at est shop barista.
+                                    
+                                Ut grinder body, lungo sweet percolator barista cup spoon. Eu, cappuccino that extraction turkish lungo carajillo. Cream carajillo body flavour, percolator at latte americano bar frappuccino. Galão blue mountain, beans a pumpkin spice sweet, strong percolator frappuccino cup spoon.
+                                </p>
+                            </div>      
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
+
+
     </div>
+
+<!-- THE CONTENT ROWS -->
+    
 
 <!-- FOOTER -->
     <footer class="footer">
